@@ -9,6 +9,9 @@ html{
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 header{
@@ -99,7 +102,6 @@ nav,
     justify-content: center;
     align-items: center;
     height: 360px;
-    border: 2px red solid;
 }
 .info-header{
     font-size: 36px;
@@ -111,6 +113,7 @@ nav,
     display: flex;
     justify-content: center;
     padding: 16px;
+    flex-wrap: wrap;
 }
 
 .photo-container{
@@ -136,7 +139,26 @@ nav,
     color: #4D5765;
 }
 
-.quote-container{
+.quote-container{padding: 20px 250px;
+    display: flex;
     height: 360px;
     background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 320px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-origin{
+    font-size: 25px;
+    font-weight: bold;
+    align-self: flex-end;
 }
